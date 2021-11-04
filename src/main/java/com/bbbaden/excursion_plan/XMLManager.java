@@ -1,4 +1,4 @@
-package com.bbbaden.preparation_lb133;
+package com.bbbaden.excursion_plan;
 
 import java.io.IOException;
 import javax.faces.context.FacesContext;

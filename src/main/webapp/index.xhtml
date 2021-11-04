@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Login</title>
+        <link href="./resources/css/style.css" rel="stylesheet" type="text/css"/> 
+    </h:head>
+    <h:body styleClass ="body">
+
+        <div class="center">
+            <h1>Planer</h1>
+            <h:panelGrid columnClasses="centered">
+                <h:panelGroup style="display:block;">
+                    <h:form>
+                        <h:selectOneRadio styleClass="radio-group" value="#{user.day}">
+                            <h3>Tag:</h3>
+                            <f:selectItem itemValue="0" itemLabel="Wochentag" />
+                            <f:selectItem itemValue="1" itemLabel="Wochenende" />
+                        </h:selectOneRadio>
+                        <h:selectOneRadio styleClass="radio-group" value="#{user.weather}">
+                            <h3>Wetter:</h3>
+                            <f:selectItem itemValue="0" itemLabel="Schönes Wetter" />
+                            <f:selectItem itemValue="1" itemLabel="Regenwetter" />
+                        </h:selectOneRadio>
+                        <h:selectOneRadio styleClass="radio-group" value="#{user.school}">
+                            <h3>Schule:</h3>
+                            <f:selectItem itemValue="0" itemLabel="Schulferien" />
+                            <f:selectItem itemValue="1" itemLabel="Schule" />
+                        </h:selectOneRadio>
+                        <h:selectOneRadio styleClass="radio-group" value="#{user.daytime}">
+                            <h3>Zeit:</h3>
+                            <f:selectItem itemValue="0" itemLabel="Tagsüber" />
+                            <f:selectItem itemValue="1" itemLabel="Abend" />
+                        </h:selectOneRadio>
+                        <h:selectOneRadio styleClass="radio-group" value="#{user.children}">
+                            <h3>Kinder:</h3>
+                            <f:selectItem itemValue="0" itemLabel="Keine Kinder" />
+                            <f:selectItem itemValue="1" itemLabel="Mit Kindern" />
+                        </h:selectOneRadio>
+                        <h:commandButton styleClass="btn" value="Submit" action="#{loginBean.doLogin}"/>
+                    </h:form>
+                </h:panelGroup>
+
+            </h:panelGrid>
+
+        </div>
+
+    </h:body>
+</html>
+

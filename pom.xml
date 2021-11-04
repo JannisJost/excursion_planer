@@ -3,17 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bbbaden</groupId>
-    <artifactId>preparation_LB133</artifactId>
+    <artifactId>excursion_planner</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>preparation_LB133</name>
+    <name>excursion_planner</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
